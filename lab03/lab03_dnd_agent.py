@@ -6,10 +6,12 @@ from ollama import chat
 from utils.llm_utils import pretty_stringify_chat, ollama_seed as seed
 
 # Add you code below
-sign_your_name = 'Pulin Agrawal'
-model = ''
-options = {}
-messages = []
+sign_your_name = 'Nhat Tran'
+model = 'llama3.2'
+options = {'temperature': 0.5, 'max_tokens': 100}
+messages = [
+  {'role': 'user', 'content': 'you have emotions like human and you are very angry'}
+]
 
 
 # But before here.

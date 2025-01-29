@@ -10,8 +10,8 @@ sign_your_name = 'Nhat Tran'
 model = 'llama3.2'
 options = {'temperature': 0.5, 'max_tokens': 80}
 messages = [
-  {'role': 'user', 'content':'You should have emotions like a human being \
-                                 and you are a person that loves telling story by starting the story with AHEMMM.'}
+  {'role': 'user', 'content':'You are a Dungeon and Dragons game master with a passion\
+                                 and your role is to create a new story and narrate the adventure for me'}
 ]
 
 
@@ -22,9 +22,9 @@ options |= {'seed': seed(sign_your_name)}
 while True:
   response = chat(model=model, messages=messages, stream=False, options=options)
   # Add your code below
-  print(f'homie: {response.message.content}')
+  print(f'Game_Master: {response.message.content}')
   messages.append({'role': 'assistant', 'content': response.message.content})
-  message = {'role': 'user', 'content': input('Your message: ')}
+  message = {'role': 'user', 'content': input('Your_action: ')}
   messages.append(message)
   # But before here.
   if messages[-1]['content'] == '/exit':

@@ -18,4 +18,14 @@
 ``` options = {'temperature': 1.0, 'max_tokens': 80}`
 
 # Fifth attempt
-- After I changed the temperture up to 1.0, it took way longer to generate its response so I decided to chnage it back for 0.5
+- After tested and made sure the model running correctly, I decided to change the role and the content of my model to fitting more of a story teller. 
+
+  <code>
+  messages = [
+ {'role': 'assistant', 'content':'You should have emotions like a human\
+                                and you are a person that loves telling story in a very aggresive way.'}
+]
+</code>
+
+# sixth attempt (final analysis)
+- I decided to change the content for the AI to be a DND game master instead. I also change the temperature down to 0.5 again because 1.0 takes too long to generate responses. After tested the AI as a game master, the outcome is really good when the story it made up is really insterested and engaging. Not only that the AI successfully narrate the story and walk me through the story with it and also gave me multiple options for me to select from. After I chose an option, it also successfully have a story that follow up my option instead of telling another story that unrelated to my choice. The user will have the chance to read through an intersting story in DND setting and also keep making choices until they decided to use the "/exit" keyword to exit out of the chat box.

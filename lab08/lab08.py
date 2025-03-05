@@ -35,6 +35,7 @@ class OllamaEmbeddingFunction:
 
 
 
+
 def load_documents(data_dir: str) -> Dict[str, str]:
     """
     Load text documents from a directory
